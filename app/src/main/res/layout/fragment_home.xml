@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroundoke">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/profilp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.846"
+            app:layout_constraintStart_toEndOf="@+id/namanya"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/selamatdatang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Programming"
+            android:textColor="#4F64D3"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/profile"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/namanya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="cursive"
+            android:text="Learning Center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/selamatdatang"
+            app:layout_constraintStart_toEndOf="@+id/selamatdatang"
+            app:layout_constraintTop_toTopOf="@+id/selamatdatang"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Belajar Pemrograman dengan Lebih Mudah di Learning Center"
+            android:textColor="#302E2E"
+            android:textSize="13dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/selamatdatang"
+            app:layout_constraintTop_toTopOf="@+id/namanya"
+            tools:ignore="TextSizeCheck" />
+
+        <GridLayout
+            android:id="@+id/gride"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="13dp"
+            android:layout_marginTop="70dp"
+            android:columnCount="2"
+            android:rowCount="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile"
+            tools:ignore="ExtraText">>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pilsatu"
+                android:layout_width="159dp"
+                android:layout_height="159dp"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:onClick="java"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginVertical="30dp"
+                    android:src="@drawable/java" />
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="58dp"
+                    android:layout_marginTop="120dp"
+                    android:text="JAVA"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="TextSizeCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="159dp"
+                android:onClick="kotlin"
+                android:layout_height="159dp"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginVertical="30dp"
+                    android:src="@drawable/kotlin" />
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="52dp"
+                    android:layout_marginTop="120dp"
+                    android:text="KOTLIN"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="TextSizeCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="159dp"
+                android:layout_height="159dp"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginVertical="30dp"
+                    android:src="@drawable/python" />
+
+                <TextView
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="45dp"
+                    android:layout_marginTop="120dp"
+                    android:text="PYTHON"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="TextSizeCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="159dp"
+                android:layout_height="159dp"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginVertical="30dp"
+                    android:src="@drawable/html" />
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="58dp"
+                    android:layout_marginTop="120dp"
+                    android:text="HTML"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="TextSizeCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="159dp"
+                android:layout_height="159dp"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginVertical="30dp"
+                    android:src="@drawable/js" />
+
+                <TextView
+                    android:layout_width="118dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="28dp"
+                    android:layout_marginTop="120dp"
+                    android:text="JAVASCRIPT"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="TextSizeCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="159dp"
+                android:layout_height="159dp"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginVertical="30dp"
+                    android:src="@drawable/php" />
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="58dp"
+                    android:layout_marginTop="120dp"
+                    android:text="PHP"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="TextSizeCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="159dp"
+                android:layout_height="159dp"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginVertical="30dp"
+                    android:src="@drawable/ruby" />
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="58dp"
+                    android:layout_marginTop="120dp"
+                    android:text="RUBY"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="TextSizeCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="159dp"
+                android:layout_height="159dp"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginVertical="30dp"
+                    android:src="@drawable/delphi" />
+
+                <TextView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="52dp"
+                    android:layout_marginTop="120dp"
+                    android:text="DELPHI"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="TextSizeCheck" />
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

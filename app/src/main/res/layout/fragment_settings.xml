@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/bgprofil">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/profilyohan" />
+
+    <TextView
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yohan Permana" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Mahasiswa Sistem Informasi UTM"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="400dp"
+        android:padding="20dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/recImage2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile1" />
+
+        <TextView
+            android:id="@+id/recTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/recImage2"
+            android:text="Yohan Permana"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/recDesc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recTitle2"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@id/recImage2"
+            android:maxLines="1"
+            android:text="Umur 20 Tahun bertepat tinggal di madiun"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:onClick="youtube"
+            android:layout_height="38dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ytlogo"
+            android:contentDescription="TODO" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="550dp"
+        android:padding="20dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/recImage3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logokerja" />
+
+
+        <TextView
+            android:id="@+id/recTitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/recImage3"
+            android:text="Yohan Permana"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/recDesc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recTitle3"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@id/recImage3"
+            android:maxLines="1"
+            android:text="Umur 20 Tahun bertepat tinggal di madiun"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="700dp"
+        android:gravity="center"
+        android:onClick="logout1"
+        android:text="Logout"
+        android:textSize="15sp"
+        app:cornerRadius="30dp"
+        tools:ignore="VisualLintButtonSize" />
+
+</RelativeLayout>

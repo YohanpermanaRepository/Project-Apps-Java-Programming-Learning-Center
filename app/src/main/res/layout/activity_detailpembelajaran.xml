@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgbot"
+    tools:context=".detailpembelajaran"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="150px"
+        android:text="Konsep Dasar Pemrograman Java"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/recCard"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1">
+
+        <RelativeLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+
+            <TextView
+                android:fontFamily="casual"
+                android:id="@+id/recTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="20dp"
+                android:text="Variabel dan Tipe Data"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/recDesc"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recTitle"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="12dp"
+                android:justificationMode="inter_word"
+                android:text="Variabel digunakan untuk menyimpan data dalam program. Berikut adalah contoh deklarasi variabel dan tipe data di Java:\n// mendeklarasikan variabel dengan tipe data integer
+int angka1 = 5; \n// mendeklarasikan variabel dengan tipe data integer
+int angka1 = 5;\n
+
+// mendeklarasikan variabel dengan tipe data string
+String nama = 'yohan';\n//menampilkan nilai dari variabel angka1
+System.out.println('Angka pertama: ' + angka1);
+" android:textSize="14sp" /></RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/recCard2"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+
+            <TextView
+                android:fontFamily="casual"
+                android:id="@+id/recTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="20dp"
+                android:text="Konsep dasar Java"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/recDesc2"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recTitle2"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="12dp"
+                android:justificationMode="inter_word"
+                android:text="Java adalah bahasa pemrograman yang populer dan kuat, digunakan untuk mengembangkan aplikasi desktop, mobile, web, dan perangkat lunak lainnya."
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+    android:layout_marginHorizontal="10dp"
+    android:id="@+id/recCard5"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    android:layout_marginTop="500dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textview1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+
+        <TextView
+            android:fontFamily="casual"
+            android:id="@+id/recTitle5"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="20dp"
+            android:text="Operator"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/recDesc5"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recTitle5"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="12dp"
+            android:justificationMode="inter_word"
+            android:text="Operator pada bahasa pemrograman Java adalah simbol atau kata kunci yang digunakan untuk melakukan operasi matematika atau logika pada suatu nilai atau variabel. "
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="Kembali"
+        android:text="KEMBALI KE SUB MATERI"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/recCard5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

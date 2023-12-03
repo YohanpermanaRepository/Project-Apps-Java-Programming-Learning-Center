@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgbot"
+    android:orientation="vertical"
+    tools:context=".detailpembelajaran2">
+
+    <TextView
+
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingTop="150px"
+        android:text="Variabel dan tipe data kotlin"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="200dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+
+            <TextView
+                android:id="@+id/recTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="casual"
+                android:text="Tipe Data"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/recDesc"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recTitle"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="12dp"
+                android:justificationMode="inter_word"
+                android:text="Tipe Data Angka
+Tipe data angka digunakan untuk merepresentasikan nilai numerik dalam program. Kotlin memiliki tipe data angka seperti Byte, Short, Int, Long, Float, dan Double.\nTipe Data Karakter
+Tipe data karakter digunakan untuk merepresentasikan karakter tunggal. Tipe data karakter di Kotlin adalah Char.\nTipe Data Boolean
+Tipe data boolean digunakan untuk merepresentasikan nilai kebenaran, yaitu true atau false. Tipe data boolean di Kotlin adalah Boolean.
+"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recCard2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+
+            <TextView
+                android:id="@+id/recTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="casual"
+                android:text="Variabel dan tipe data kotlin"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/recDesc2"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recTitle2"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="12dp"
+                android:justificationMode="inter_word"
+                android:text="Variabel adalah suatu tempat penyimpanan data yang diberi nama, yang dapat diubah nilainya selama program berjalan. "
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recCard5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="500dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+
+            <TextView
+                android:id="@+id/recTitle5"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="casual"
+                android:text="Konteks"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/recDesc5"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recTitle5"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="12dp"
+                android:justificationMode="inter_word"
+                android:text="Dalam Kotlin, tipe data variabel dapat ditentukan secara eksplisit atau dapat diinferensikan oleh Kotlin compiler berdasarkan nilai yang diberikan pada saat deklarasi variabel. Untuk mendeklarasikan variabel, dapat menggunakan kata kunci var atau val, yang masing-masing digunakan untuk membuat variabel mutable atau immutable."
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="Kembali2"
+        android:text="KEMBALI KE SUB MATERI"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/recCard5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
